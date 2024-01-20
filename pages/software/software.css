@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "Poppins Regular";
+    src: url(fonts/Poppins-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Poppins Thin";
+    src: url(fonts/Poppins-Thin.ttf) format("truetype");
+}
+
+@keyframes button_grow {
+    from {font-size: 20px;}
+    to {font-size: 23px;}
+}
+
+@keyframes button_shrink {
+    from {font-size: 23px;}
+    to {font-size: 20px;}
+}
+
+@keyframes glide_in {
+    from {
+        opacity: 0;
+        transform: translateX(10%);   
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fade_in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.header {
+    background-color: rgb(28, 219, 130);
+}
+.header_items {
+    display: flex;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    overflow: auto;
+    align-items: center;
+}
+.logo {
+    float: left;
+    font-family: "Poppins Regular";
+}
+.navigation {
+    width: 50%;
+    padding-left: 3%;
+}
+.home_button_padding {
+    position: relative;
+    left: 3px;
+}
+.home_button {
+    padding: 5px;
+    border-radius: 10px;
+    float: left;
+    background-color: rgba(143, 136, 136, 0.500);
+}
+.home {
+    background-color: rgb(170, 203, 209);
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.home:hover {
+    animation-name: button_grow;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.home:not(:hover) {
+    animation-name: button_shrink;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.programs_button_padding {
+    position: relative;
+    left: 10px;
+}
+.programs_button {
+    padding: 5px;
+    border-radius: 10px;
+    float: left;
+    background-color: rgba(143, 136, 136, 0.500);
+}
+.programs {
+    background-color: rgb(170, 203, 209);
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.programs:hover {
+    animation-name: button_grow;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.programs:not(:hover) {
+    animation-name: button_shrink;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.top_page_content {
+    display: flex;
+    padding: 5;
+    margin: 5;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+    background-image: url(../../title_image.gif);
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+}
+.page_title {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.logo_title {
+    text-align: center;
+    font-family: "Poppins Regular";
+    color: white;
+}
+.subheading {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.subheading_text {
+    text-align: center;
+    font-family: "Poppins Regular";
+    color: white;
+}
+.middle_page_content {
+    display: flex;
+    padding: 5;
+    margin: 5;
+    align-items: center;
+    justify-content: left;
+}
+.pypad {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+    padding: 5px;
+    animation-name: glide_in;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.pypad_title {
+    align-items: center;
+    justify-content: left;
+}
+.pypad_title_text {
+    font-family: "Poppins";
+    font-size: 25px;
+    color: rgb(0, 115, 255);
+}
+.pypad_about_and_download {
+    align-items: center;
+    justify-content: center;
+}
+.pypad_about_and_download_link {
+    position: relative;
+    padding-left: 15px;
+    bottom: 15px;
+    font-family: "Poppins Regular";
+    font-size: 20px;
+    color: rgb(132, 185, 255);
+}
+
+@media (max-width: 650px) {
+    .pypad {
+        animation-name: fade_in;
+    }
+
+    .header_items {
+        overflow-x: hidden;
+    }
+}
+
+.footer {
+    position: absolute;
+    background-color: rgb(28, 219, 130);
+    bottom: 0;
+    width: 100%;
+}
+.footer_items {
+    padding-left: 7px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.copyright {
+    font-family: "Poppins Regular";
+}
