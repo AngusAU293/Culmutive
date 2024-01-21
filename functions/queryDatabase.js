@@ -14,12 +14,15 @@ exports.handler = async (event, context) => {
 
     connection.query(query, (error, results) => {
         if (error) {
+            console.error("MySQL Query Error:", error)
             connection.end();
             return {
                 statusCode: 500,
                 body: JSON.stringify({ message: "Internal Server Error" }),
             };
         }
+
+        console.log("MySQL Query Result:", results)
 
         connection.end();
 
