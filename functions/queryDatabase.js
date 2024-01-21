@@ -11,7 +11,7 @@ exports.handler = async (event, context) => {
 
   connection.connect();
 
-  const query = 'SELECT * FROM your_table';
+  const query = 'SELECT * FROM users';
 
   connection.query(query, async (error, results) => {
     if (error) {
