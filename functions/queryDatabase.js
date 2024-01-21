@@ -3,10 +3,10 @@ const axios = require('axios');
 
 exports.handler = async (event, context) => {
   const connection = mysql.createConnection({
-    host: 'your-infinity-free-host',
-    user: 'your-infinity-free-username',
-    password: 'your-infinity-free-password',
-    database: 'your-infinity-free-database',
+    host: 'sql307.infinityfree.com',
+    user: 'if0_35829764',
+    password: 'Angus50293',
+    database: 'if0_35829764_Culmutive',
   });
 
   connection.connect();
