@@ -26,7 +26,7 @@ exports.handler = async (event, context) => {
     console.log('MySQL Query Result:', results);
 
     try {
-      const response = await axios.get('https://api.example.com/data');
+      const response = await axios.get('https://jsonplaceholder.typicode.com/users');
       console.log('External API Response:', response.data);
 
       connection.end();
