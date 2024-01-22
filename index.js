@@ -1,5 +1,5 @@
 function home() {
-    window.location = "index.html";
+    window.location = "./";
 }
 function programs() {
     window.location = "pages/software/";
