@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "Poppins Regular";
+    src: url(../fonts/Poppins-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Poppins Thin";
+    src: url(../fonts/Poppins-Thin.ttf) format("truetype");
+}
+
+@keyframes button_grow {
+    from {font-size: 20px;}
+    to {font-size: 23px;}
+}
+
+@keyframes button_shrink {
+    from {font-size: 23px;}
+    to {font-size: 20px;}
+}
+
+@keyframes fade_out {
+    from {opacity: 100%;}
+    to {opacity: 60%;}
+}
+
+@keyframes fade_in {
+    from {opacity: 60%;}
+    to {opacity: 100%;}
+}
+
+@keyframes glide_in {
+    from {opacity: 0%; left: 30%;}
+    to {opacity: 100%; left: 0%;}
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.header {
+    background-color: rgb(28, 219, 130);
+}
+.header_items {
+    display: flex;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    overflow: auto;
+    align-items: center;
+}
+.logo {
+    float: left;
+    font-family: "Poppins Regular";
+}
+.navigation {
+    width: 50%;
+    padding-left: 3%;
+}
+.home_button_padding {
+    position: relative;
+    left: 3px;
+}
+.home_button {
+    padding: 5px;
+    border-radius: 10px;
+    float: left;
+    background-color: rgba(143, 136, 136, 0.500);
+}
+.home {
+    background-color: rgb(170, 203, 209);
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.home:hover {
+    animation-name: button_grow;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.home:not(:hover) {
+    animation-name: button_shrink;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.programs_button_padding {
+    position: relative;
+    left: 10px;
+}
+.programs_button {
+    padding: 5px;
+    border-radius: 10px;
+    float: left;
+    background-color: rgba(143, 136, 136, 0.500);
+}
+.programs {
+    background-color: rgb(170, 203, 209);
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.programs:hover {
+    animation-name: button_grow;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.programs:not(:hover) {
+    animation-name: button_shrink;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.heading {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+    font-family: "Poppins Regular";
+    text-align: center;
+}
+.info {
+    align-items: left;
+    justify-content: left;
+}
+.info_text {
+    font-family: "Poppins Regular";
+    font-size: 20px;
+    padding-left: 15px;
+}
+.download {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    animation-name: glide_in;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.download_button {
+    position: relative;
+    left: 10px;
+    background-color: lightblue;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+.download_button:hover {
+    animation-name: fade_out;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.download_button:not(:hover) {
+    animation-name: fade_in;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.download_image {
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+@media (max-width: 650px) {
+    .header_items {
+        overflow-x: hidden;
+    }
+}
