@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-@keyframes pop {
-    0% {padding: 10px;}
-    50% {padding: 0;}
-    100% {padding: 10px;}
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -15,16 +9,9 @@ body {
     height: 100vh;
     font-family: "Poppins";
 }
-
 .box {
-    display: flex;
     align-items: center;
     justify-content: center;
     border: 3px red solid;
     padding: 10px;
-}
-.title {
-    animation-name: pop;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
 }
