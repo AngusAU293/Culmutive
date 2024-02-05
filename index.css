@@ -1,13 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @keyframes button_grow {
-    from {font-size: 20px;}
-    to {font-size: 23px;}
+    from {
+        background-color: rgb(170, 203, 209);
+        color: black;
+    }
+    to {
+        background-color: rgb(54, 67, 255);
+        color: white;
+    }
 }
 
 @keyframes button_shrink {
-    from {font-size: 23px;}
-    to {font-size: 20px;}
+    from {
+        background-color: rgb(54, 67, 255);
+        color: white;
+        }
+    to {
+        background-color: rgb(170, 203, 209);
+        color: black;
+    }
 }
 
 @keyframes fly-in {
@@ -48,10 +60,6 @@ body {
     padding-bottom: 3px;
     overflow: auto;
     align-items: center;
-}
-.logo {
-    float: left;
-    font-family: "Poppins";
 }
 .navigation {
     display: flex;
@@ -113,6 +121,45 @@ body {
     animation-duration: 500ms;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+.logo {
+    float: left;
+    font-family: "Poppins";
+}
+.logo_popup {
+    font-family: Arial;
+    background-color: rgb(36, 64, 221);
+    border-radius: 10px;
+    position: absolute;
+    top: 100px;
+    left: 5px;
+}
+.logo_popup_triangle {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid rgb(36, 64, 221);
+    position: absolute;
+    top: 75px;
+    left: 50px;
+}
+.logo_popup_ok {
+    position: relative;
+    font-size: 17px;
+    bottom: 5px;
+    left: 5px;
+    cursor: pointer;
+    background-color: wheat;
+    border-style: none;
+    outline: none;
+}
+.logo_popup_info {
+    color: white;
+    position: relative;
+    bottom: 10px;
+    font-size: 20px;
+    padding: 5px;
 }
 
 .top_page_content {
@@ -274,4 +321,17 @@ body {
 }
 .copyright {
     font-family: "Poppins";
+}
+.links {
+    position: relative;
+    bottom: 10px;
+    font-family: Arial;
+}
+.github_repo_link {
+    padding: 5px;
+}
+.github_project_link {
+    position: relative;
+    padding: 5px;
+    left: 10px;
 }

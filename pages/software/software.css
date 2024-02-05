@@ -8,13 +8,25 @@
 }
 
 @keyframes button_grow {
-    from {font-size: 20px;}
-    to {font-size: 23px;}
+    from {
+        background-color: rgb(170, 203, 209);
+        color: black;
+    }
+    to {
+        background-color: rgb(54, 67, 255);
+        color: white;
+    }
 }
 
 @keyframes button_shrink {
-    from {font-size: 23px;}
-    to {font-size: 20px;}
+    from {
+        background-color: rgb(54, 67, 255);
+        color: white;
+        }
+    to {
+        background-color: rgb(170, 203, 209);
+        color: black;
+    }
 }
 
 @keyframes glide_in {
